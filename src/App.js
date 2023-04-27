@@ -14,9 +14,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/suc-khoe" element={<SucKhoe />} />
-        <Route path="*" element={<div>Not Found</div>} />
+        {/* <Route path="*" element={<div>Not Found</div>} /> */}
         <Route path="/the-gioi" element={<TheGioi />} />
         <Route path="/doi-song" element={<DoiSong />} />
         <Route path="/thoi-su" element={<ThoiSu />} />
