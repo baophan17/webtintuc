@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/webtintuc/static/css/main.10bb2c70.css",
-    "main.js": "/webtintuc/static/js/main.2a3b32ca.js",
-    "static/js/787.28cb0dcd.chunk.js": "/webtintuc/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/webtintuc/index.html",
-    "main.10bb2c70.css.map": "/webtintuc/static/css/main.10bb2c70.css.map",
-    "main.2a3b32ca.js.map": "/webtintuc/static/js/main.2a3b32ca.js.map",
-    "787.28cb0dcd.chunk.js.map": "/webtintuc/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.10bb2c70.css",
+    "main.js": "/static/js/main.590b9184.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/index.html",
+    "main.10bb2c70.css.map": "/static/css/main.10bb2c70.css.map",
+    "main.590b9184.js.map": "/static/js/main.590b9184.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10bb2c70.css",
-    "static/js/main.2a3b32ca.js"
+    "static/js/main.590b9184.js"
   ]
 }
