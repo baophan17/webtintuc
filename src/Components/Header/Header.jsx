@@ -6,7 +6,7 @@ function Header(props) {
   const arrPagination = [
     {
       page: "Trang chủ",
-      path: "/",
+      path: "/home",
     },
     {
       page: "Sức khỏe",
