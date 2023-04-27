@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+img {
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #000;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  color: #087cce;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageWrap {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.pageWrap .page {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.pageWrap .page .column {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageWrap .page .column .img {
+  width: 100%;
+  height: 100%;
+}
+
+.pageWrap .page .column span {
+  margin-top: 10px;
+  display: block;
+}
+
+.clickToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #087cce;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
