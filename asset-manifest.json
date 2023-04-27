@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/webtintuc/static/css/main.10bb2c70.css",
+    "main.js": "/webtintuc/static/js/main.b9629849.js",
+    "static/js/787.28cb0dcd.chunk.js": "/webtintuc/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/webtintuc/index.html",
+    "main.10bb2c70.css.map": "/webtintuc/static/css/main.10bb2c70.css.map",
+    "main.b9629849.js.map": "/webtintuc/static/js/main.b9629849.js.map",
+    "787.28cb0dcd.chunk.js.map": "/webtintuc/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10bb2c70.css",
+    "static/js/main.b9629849.js"
+  ]
+}
