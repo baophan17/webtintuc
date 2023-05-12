@@ -8,28 +8,33 @@ import TheGioi from "./Components/Pages/TheGioi";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+// Khai báo biến `router` với giá trị trả về của hàm `createBrowserRouter()`
+// Hàm này sẽ tạo ra một đối tượng router cho ứng dụng React
 const router = createBrowserRouter([
+  // Định nghĩa các route cho ứng dụng
   {
+    // Route chính của ứng dụng
     path: "/",
     element: <App />,
 
     children: [
+      // Route cho trang chủ
       {
         path: "/",
         element: <Home />,
       },
+      // Route cho trang sức khỏe
       {
         exact: true,
         path: "/suc-khoe",
         element: <SucKhoe />,
       },
-
+      // Route mặc định khi không trùng khớp với bất kỳ route nào trên
       {
         path: "*",
         element: <div>Not Found</div>,
       },
-
+      // Route cho trang thế giới
       {
         path: "the-gioi",
         element: <TheGioi />,
@@ -37,13 +42,13 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+// Render ứng dụng React vào thẻ root của trang HTML
+// Sử dụng React.StrictMode để bật chế độ kiểm tra lỗi cấu trúc của ứng dụng
+// Sử dụng RouterProvider để cung cấp đối tượng router cho ứng dụng
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

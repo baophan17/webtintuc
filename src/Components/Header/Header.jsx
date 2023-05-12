@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 Header.propTypes = {};
-
+// Mảng arrPagination chứa các trang và đường dẫn của chúng để tạo phân trang.
+// Mỗi phần tử trong mảng đại diện cho một trang và bao gồm tên trang và đường dẫn tương ứng.
+// Biến arrPagination được sử dụng để hiển thị các liên kết phân trang trên Header.
 function Header(props) {
   const arrPagination = [
     {
@@ -29,10 +31,11 @@ function Header(props) {
       path: "/du-lich",
     },
   ];
-
+  // Lưu trữ đường dẫn hiện tại trong state.
   const [url, setUrl] = React.useState(window.location.pathname);
+  // Lưu trữ giá trị của ô tìm kiếm trong state.
   const [valueInput, setValueInput] = useState("");
-
+  // Hàm xử lý sự kiện khi người dùng tìm kiếm.
   const handleOpenLink = (e) => {
     e.preventDefault();
     window.location.href = `https://timkiem.vnexpress.net/?q=${valueInput}`;
@@ -56,8 +59,10 @@ function Header(props) {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          {/* lặp qua mảng arrPagination và tạo ra một thẻ li cho mỗi phần tử trong mảng */}
           {arrPagination?.map((item, index) => {
             return (
+              // Thẻ list tạo ra các mục trong thanh điều hướng
               <li key={index} class={url === item.path ? "nav-item active" : "nav-item"}>
                 <Link
                   className="nav-link"
@@ -71,6 +76,7 @@ function Header(props) {
           })}
         </ul>
       </div>
+      {/* Form tìm kiếm */}
       <form onSubmit={handleOpenLink} class="form-inline">
         <input
           class="form-control mr-sm-2"
@@ -80,6 +86,7 @@ function Header(props) {
           value={valueInput}
           onChange={(e) => setValueInput(e.target.value)}
         />
+        {/* Button tìm kiếm */}
         <button class="btn btn-outline-success my-2 my-sm-0">Tìm kiếm</button>
       </form>
     </nav>

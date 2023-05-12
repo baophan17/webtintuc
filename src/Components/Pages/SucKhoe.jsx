@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 SucKhoe.propTypes = {};
 
 function SucKhoe(props) {
+  // Sử dụng hooks useState để lưu trữ dữ liệu được trả về từ API
   const [allData, setAllData] = useState([]);
+  // Sử dụng hooks useEffect để gọi API và lưu trữ kết quả trả về
   useEffect(() => {
     const getAllApi = async () => {
       const response = await fetch(
@@ -13,13 +15,13 @@ function SucKhoe(props) {
     };
     getAllApi();
   }, []);
-
+  // Hàm xử lý chuỗi HTML để trả về nội dung văn bản
   const innerHtmlData = (data) => {
     var el = document.createElement("html");
     el.innerHTML = data;
     return el.textContent || el.innerText || "";
   };
-
+  // Trả về giao diện
   return (
     <div className="pageWrap">
       <div className="page">

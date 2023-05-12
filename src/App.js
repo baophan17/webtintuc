@@ -12,16 +12,20 @@ import ThoiSu from "./Components/Pages/ThoiSu";
 function App() {
   return (
     <div className="App">
+      {/* Hiển thị thanh điều hướng */}
       <Header />
+      {/* Định nghĩa các đường dẫn và thành phần tương ứng */}
       <Routes>
-        <Route path="*" element={<Home />} />
+
+        <Route path="*" element={<Home />} /> {/* Mặc định hiển thị trang chủ */}
         <Route path="/suc-khoe" element={<SucKhoe />} />
-        {/* <Route path="*" element={<div>Not Found</div>} /> */}
+        
         <Route path="/the-gioi" element={<TheGioi />} />
         <Route path="/doi-song" element={<DoiSong />} />
         <Route path="/thoi-su" element={<ThoiSu />} />
         <Route path="/du-lich" element={<DuLich />} />
       </Routes>
+      {/* Button cuộn lên đầu trang */}
       <ClickToTop />
     </div>
   );
